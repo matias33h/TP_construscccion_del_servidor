@@ -1,26 +1,26 @@
-const {tareass,Schema}= require ('mongoose');
+const { Schema, model }= require('mongoose');
 
-const TareasShema= new Schema ({
-
+const TareasShema = new Schema({
     fecha:{
-     type:Date,
+        type:Date,
+        default: Date.now
     },
 
-     categoria: {
-        type: String,
-        required: true,
+    categoria: {
+        type: String
     },
+
     descripcion: {
         type: String,
         required: true
     },
-    materia: {
+
+    titulo: {
         type: String,
         required: true,
         unique: true
-    },
-
+    }
 })
 
-module.exports= tareass('tareas',TareasShema);
+module.exports= model('tareas', TareasShema);
 

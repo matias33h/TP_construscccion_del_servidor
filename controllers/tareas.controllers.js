@@ -1,4 +1,4 @@
-const tarea=require("../models/tareas")
+const task = require("../models/tareas")
 
 const ctrlTareas={}
 
@@ -14,21 +14,23 @@ ctrlTareas.getTareas = async (req, res) => {
 // Controlador para crear nuevo usuario en la Base de Datos.
 ctrlTareas.postTareas = async (req, res) => {
     // Se obtienen los datos enviados por método POST
-    const { username, password, email } = req.body;
+    const { fecha, categoria, descripcion, titulo } = req.body;
 
     // Se instancia un nuevo documento de MongoDB para luego ser guardado
-    const newUser = new User({
-        username,
-        password,
-        email
-    });
+    const newTarea = new task({
+        fecha,
+        categoria,
+        descripcion,
+        titulo
+    })
 
     // Se almacena en la base de datos con método asícrono .save()
-    const tarea = await newUser.save();
+    const tarea = await newTarea.save();
     
     // Se devuelve una respuesta al cliente con un mensaje y los datos del usuario creado.
+    
     return res.json({
-        msg: 'Usuario creado correctamente',
+        msg: 'Tarea creada correctamente',
         tarea
     });
 };
