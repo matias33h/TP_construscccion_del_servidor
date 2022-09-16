@@ -4,7 +4,7 @@ ctrlHome.getHome=(req,res)=>{
 
 res.send(
     
-    "PETICION GET CON EXITO",
+    "PETICION GET CON EXITOOO",
     
 )
 
