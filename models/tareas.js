@@ -18,7 +18,6 @@ const TareasShema = new Schema({
     titulo: {
         type: String,
         required: true,
-        unique: true
     }
 })
 

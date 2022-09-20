@@ -4,18 +4,14 @@ ctrlHome.getHome=(req,res)=>{
 
 res.send(
     
-    "PETICION GET CON EXITOOO",
-    
-)
+    "PETICION GET CON EXITO"
+    )
 
 }
 
 ctrlHome.postHome=(req,res)=>{
 
-res.send("PETICION POST CON EXITO",
-
-    "    INSTITUTO POLITECTCO FORMOSA   ",
-    "----------------------------------------  "
+res.send("PETICION POST CON EXITO"
     
 )
 

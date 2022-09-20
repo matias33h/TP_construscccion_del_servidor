@@ -5,7 +5,7 @@ const ctrlTareas={}
 // Controlador para obtener todos los usuarios de la Base de Datos.
 ctrlTareas.getTareas = async (req, res) => {
     // Se consultan todos los documentos de la base de datos.
-    const tareas = await tarea.find();
+    const tareas = await task.find();
 
     // Se devuelve al cliente un arreglo con los datos de los usuarios.
     return res.json(tareas)
