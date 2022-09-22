@@ -37,15 +37,16 @@ ctrlTareas.postTareas = async (req, res) => {
 
 // Controlador para actualizar un usuario, requiere que se envíe ID  de usuario.
 ctrlTareas.putTareas = async (req, res) => {
-    return res.json({
-        msg: ''
+    return send.json({
+        msg: 'hola mundo'
     })
 };
 
 // Controlador para eliminar usuario, requiere ID de usuario.
 ctrlTareas.deleteTareas = async (req, res) => {
-    return res.json({
-        msg: ''
+
+    return send.json({
+        msg: 'estamos eliminando'
     })
 };
 

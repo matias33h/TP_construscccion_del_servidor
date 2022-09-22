@@ -10,7 +10,7 @@ conexion();
 app.use(express.json())
 
 app.use(require("./routes/tareas.routes"))
-
+app.use(require("./routes/user.routes"))
 
 
 puerto=process.env.PORT || 3000

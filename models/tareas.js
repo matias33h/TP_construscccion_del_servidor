@@ -1,6 +1,7 @@
 const { Schema, model }= require('mongoose');
 
 const TareasShema = new Schema({
+     
     fecha:{
         type:Date,
         default: Date.now
@@ -18,7 +19,8 @@ const TareasShema = new Schema({
     titulo: {
         type: String,
         required: true,
-    }
+    },
+ 
 })
 
 module.exports= model('tareas', TareasShema);
