@@ -8,10 +8,10 @@ const {
 } = require("../controllers/tareas.controllers") //importamos los datos de home controllers
 
 
-router.get("/acceder", getTareas)
-router.post("/leer", postTareas)
-router.put("/put", putTareas)
-router.delete("/delete", deleteTareas)
+router.get("/tarea", getTareas)
+router.post("/tarea", postTareas)
+router.put('/tarea/:id', putTareas)
+router.delete('/tarea/:id', deleteTareas)
 // router.put("/actualizar", putTareas)
 // router.delete("/eliminar", deleteTareas)
 
